@@ -1,0 +1,6 @@
+- ```sudo systemctl status libvirtd``` # verify sevice
+- ```qemu-img create -f qcow2 /mnt/ext155gb/vms/{INSTANCE}.qcow2 40G``` # init disk
+- ```virsh pool-list --all``` # list up pool
+- ```virt-manager --debug```
+- ```virsh start {INSTANCE}```
+- ```virsh shutdown {INSTANCE}```
