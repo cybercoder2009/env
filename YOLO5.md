@@ -1,0 +1,4 @@
+- ```sudo apt install git```
+- ```sudo apt install python3.12-venv```
+- ```python3 -m venv yolov5-env```
+- ```source yolov5-env/bin/activate```
