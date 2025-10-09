@@ -1,4 +1,9 @@
+- ubuntu server + opencv-python-headless + yolo
 - ```sudo apt install git```
 - ```sudo apt install python3.12-venv```
 - ```python3 -m venv yolov5-env```
 - ```source yolov5-env/bin/activate```
+- ```git clone https://github.com/ultralytics/yolov5.git```
+- ```cd yolov5```
+- ```pip install -r requirements.txt --index-url https://pypi.tuna.tsinghua.edu.cn/simple --trusted-host pypi.tuna.tsinghua.edu.cn```
+- ```pip install opencv-python-headless -i https://pypi.tuna.tsinghua.edu.cn/simple```

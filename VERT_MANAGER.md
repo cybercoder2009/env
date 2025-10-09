@@ -4,3 +4,10 @@
 - ```virsh pool-list --all``` # list up pool
 - ```virsh start {INSTANCE}```
 - ```virsh shutdown {INSTANCE}```
+- manually extend disk
+  - ```sudo lvextend -l +100%FREE /dev/mapper/ubuntu--vg-ubuntu--lv```
+  - ```sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv```
+- shared
+  - ```sudo apt install virtiofsd``` # host
+  - ```sudo mount -t virtiofs shared /mnt/shared``` # guest instant mount
+  - ```sudo nano /etc/fstab``` -> add `shared   /mnt/shared   virtiofs   defaults   0   0` # guest auto mount
